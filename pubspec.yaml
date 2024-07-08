@@ -1,6 +1,6 @@
 name: locale_manager
 description: "Flutter plugin to manage the locale of the native layer."
-version: 0.0.2
+version: 0.0.2+1
 repository: https://github.com/josecleiton/locale_manager
 issue_tracker: https://github.com/josecleiton/locale_manager/issues
 
