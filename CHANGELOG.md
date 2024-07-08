@@ -1,3 +1,6 @@
+## 0.0.2+2
+* downgrade dart sdk constraint to 3.3.0
+
 ## 0.0.2
 * getLocale returns Locale
 
