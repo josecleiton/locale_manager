@@ -42,7 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
     _locale = LocaleManager();
     _controller = TextEditingController();
     WidgetsBinding.instance.addPostFrameCallback((_) async {
-      _controller.text = await _locale.getLocale();
+      final locale = await _locale.getLocale();
+      _controller.text = locale.toLanguageTag();
+
       await _fetchText();
     });
     super.initState();
