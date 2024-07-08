@@ -1,5 +1,7 @@
 library locale_manager;
 
+import 'dart:ui';
+
 import 'locale_manager_platform_interface.dart';
 
 class LocaleManager {
@@ -17,8 +19,8 @@ class LocaleManager {
     return LocaleManagerPlatform.instance.getLocalized(key);
   }
 
-  /// Retrieves the current locale in IETF language tag standard.
+  /// Retrieves the current [Locale]
   ///
   /// Returns a [Future] that completes with the current locale.
-  Future<String> getLocale() => LocaleManagerPlatform.instance.getLocale();
+  Future<Locale> getLocale() => LocaleManagerPlatform.instance.getLocale();
 }

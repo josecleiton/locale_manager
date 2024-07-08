@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'locale_manager_method_channel.dart';
@@ -27,5 +29,5 @@ abstract class LocaleManagerPlatform extends PlatformInterface {
 
   Future<String?> getLocalized(String key);
 
-  Future<String> getLocale();
+  Future<Locale> getLocale();
 }

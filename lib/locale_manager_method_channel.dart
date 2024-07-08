@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -25,8 +27,9 @@ class MethodChannelLocaleManager extends LocaleManagerPlatform {
   }
 
   @override
-  Future<String> getLocale() async {
+  Future<Locale> getLocale() async {
     final result = await methodChannel.invokeMethod<String>('getLocale');
-    return result ?? '';
+    final split = result?.split('-');
+    return Locale(split?.firstOrNull ?? '', split?.lastOrNull);
   }
 }
