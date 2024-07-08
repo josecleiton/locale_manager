@@ -10,7 +10,7 @@ To use this plugin, add `locale_manager` as a [dependency in your pubspec.yaml f
 ```yaml
 
 dependencies:
-	locale_manager: ^0.0.1
+	locale_manager: any
 
 ```
 

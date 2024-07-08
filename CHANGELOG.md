@@ -1,3 +1,6 @@
+## 0.0.2+4
+* update readme
+
 ## 0.0.2+3
 * example project
 
