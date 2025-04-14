@@ -1,4 +1,4 @@
-package com.example.example
+package br.com.josecleiton.locale_manager_example
 
 import io.flutter.embedding.android.FlutterActivity
 
