@@ -1,4 +1,4 @@
-group 'com.example.locale_manager'
+group 'br.com.josecleiton.locale_manager'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -25,10 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    if (project.android.hasProperty("namespace")) {
-        namespace 'com.example.locale_manager'
-    }
-
+    namespace 'br.com.josecleiton.locale_manager'
     compileSdk 34
 
     compileOptions {
