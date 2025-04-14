@@ -1,3 +1,6 @@
+## 0.1.0
+* support newer gradle versions
+
 ## 0.0.2+4
 * update readme
 
